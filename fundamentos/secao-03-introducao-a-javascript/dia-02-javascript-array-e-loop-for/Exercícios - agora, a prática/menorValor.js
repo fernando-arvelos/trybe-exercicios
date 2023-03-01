@@ -7,4 +7,4 @@ for (let index = 1; index < numbers.length; index += 1) {
   } 
 }
 
-console.log(lowerValue);
+console.log(`O menor valor do Array é: ${lowerValue}`);

@@ -7,4 +7,4 @@ for (let index = 1; index < numbers.length; index += 1) {
   } 
 }
 
-console.log(higherValue);
+console.log(`O maior valor do Array é: ${higherValue}`);
