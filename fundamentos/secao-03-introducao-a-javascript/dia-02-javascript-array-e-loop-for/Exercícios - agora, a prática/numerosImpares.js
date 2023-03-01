@@ -12,4 +12,4 @@ if (oddAmount === 0) {
   console.log('Nenhum valor ímpar encontrado');
 } else {
   console.log(`O array possui ${oddAmount} números ímpares`);
-}
+} 
