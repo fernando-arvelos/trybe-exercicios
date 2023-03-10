@@ -29,3 +29,7 @@ elememtSectionLeft.className = 'left-content';
 elementMain.appendChild(elememtSectionLeft);
 
 // Exercício 6
+
+const elememtSectionRight = document.createElement('section');
+elememtSectionRight.className = 'right-content';
+elementMain.appendChild(elememtSectionRight);
