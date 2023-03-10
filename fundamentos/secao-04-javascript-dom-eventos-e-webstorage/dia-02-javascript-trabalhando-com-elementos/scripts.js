@@ -18,9 +18,9 @@ elementMain.appendChild(elememtSectionCenter);
 
 // Exercício 4
 
-const elementP = document.createElement('p');
-elementP.innerHTML = 'Olá! Estou aprendendo DOM';
-elememtSectionCenter.appendChild(elementP);
+const paragraph = document.createElement('p');
+paragraph.innerHTML = 'Olá! Estou aprendendo DOM';
+elememtSectionCenter.appendChild(paragraph);
 
 // Exercício 5
 
@@ -40,3 +40,7 @@ const elementImg = document.createElement('img');
 elementImg.src = 'https://picsum.photos/200';
 elementImg.className = 'small-image';
 elememtSectionLeft.appendChild(elementImg);
+
+// Exercício 8
+
+const elementList
