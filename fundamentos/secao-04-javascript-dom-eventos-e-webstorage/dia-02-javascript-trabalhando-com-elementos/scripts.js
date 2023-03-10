@@ -33,3 +33,10 @@ elementMain.appendChild(elememtSectionLeft);
 const elememtSectionRight = document.createElement('section');
 elememtSectionRight.className = 'right-content';
 elementMain.appendChild(elememtSectionRight);
+
+// Exercício 7
+
+const elementImg = document.createElement('img');
+elementImg.src = 'https://picsum.photos/200';
+elementImg.className = 'small-image';
+elememtSectionLeft.appendChild(elementImg);
