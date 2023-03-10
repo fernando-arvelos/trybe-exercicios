@@ -21,3 +21,11 @@ elementMain.appendChild(elememtSectionCenter);
 const elementP = document.createElement('p');
 elementP.innerHTML = 'Olá! Estou aprendendo DOM';
 elememtSectionCenter.appendChild(elementP);
+
+// Exercício 5
+
+const elememtSectionLeft = document.createElement('section');
+elememtSectionLeft.className = 'left-content';
+elementMain.appendChild(elememtSectionLeft);
+
+// Exercício 6
