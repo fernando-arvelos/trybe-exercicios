@@ -1,0 +1,23 @@
+// Exercício 1  
+
+const elementH1 = document.createElement('h1');
+elementH1.innerHTML = 'TrybeTrip - Agência de Viagens';
+document.body.appendChild(elementH1);
+
+// Exercício 2
+
+const elementMain = document.createElement('main');
+elementMain.className = 'main-content';
+document.body.appendChild(elementMain)
+
+// Exercício 3
+
+const elememtSectionCenter = document.createElement('section');
+elememtSectionCenter.className = 'center-content';
+elementMain.appendChild(elememtSectionCenter);
+
+// Exercício 4
+
+const elementP = document.createElement('p');
+elementP.innerHTML = 'Olá! Estou aprendendo DOM';
+elememtSectionCenter.appendChild(elementP);
