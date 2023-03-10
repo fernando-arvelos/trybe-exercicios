@@ -13,39 +13,41 @@ document.body.appendChild(elementMain)
 
 // Exercício 3
 
-const elememtSectionCenter = document.createElement('section');
-elememtSectionCenter.className = 'center-content';
-elementMain.appendChild(elememtSectionCenter);
+const elementSectionCenter = document.createElement('section');
+elementSectionCenter.className = 'center-content';
+elementMain.style.backgroundColor = 'green';
+elementMain.appendChild(elementSectionCenter);
 
 // Exercício 4
 
 const paragraph = document.createElement('p');
 paragraph.innerHTML = 'Olá! Estou aprendendo DOM';
-elememtSectionCenter.appendChild(paragraph);
+elementSectionCenter.appendChild(paragraph);
 
 // Exercício 5
 
-const elememtSectionLeft = document.createElement('section');
-elememtSectionLeft.className = 'left-content';
-elementMain.appendChild(elememtSectionLeft);
+const elementSectionLeft = document.createElement('section');
+elementSectionLeft.className = 'left-content';
+elementMain.appendChild(elementSectionLeft);
 
 // Exercício 6
 
-const elememtSectionRight = document.createElement('section');
-elememtSectionRight.className = 'right-content';
-elementMain.appendChild(elememtSectionRight);
+const elementSectionRight = document.createElement('section');
+elementSectionRight.className = 'right-content';
+elementSectionRight.style.marginRight = 'auto';
+elementMain.appendChild(elementSectionRight);
 
 // Exercício 7
 
 const elementImg = document.createElement('img');
 elementImg.src = 'https://picsum.photos/200';
 elementImg.className = 'small-image';
-elememtSectionLeft.appendChild(elementImg);
+elementSectionLeft.appendChild(elementImg);
 
 // Exercício 8
 
 const elementUl = document.createElement('ul');
-elememtSectionRight.appendChild(elementUl);
+elementSectionRight.appendChild(elementUl);
 const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
   'Sete', 'Oito', 'Nove', 'Dez']
 for (let num in arrayNumbers) {
@@ -58,6 +60,18 @@ for (let num in arrayNumbers) {
 
 for (let index = 1; index <= 3; index += 1) {
   const elementH3 = document.createElement('h3');
+  elementH3.className = 'description';
   elementH3.innerHTML = `H3 ${index}`;
   elementMain.appendChild(elementH3);
 }
+
+// Remover section left
+
+const sectionLeftContent = document.getElementsByClassName('left-content')[0];
+      elementMain.removeChild(sectionLeftContent);
+
+// Remover os últimos elementos da lista
+
+const ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
