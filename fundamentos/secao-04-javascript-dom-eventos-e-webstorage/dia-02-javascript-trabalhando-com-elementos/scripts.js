@@ -1,6 +1,7 @@
 // Exercício 1  
 
 const elementH1 = document.createElement('h1');
+elementH1.className = 'title';
 elementH1.innerHTML = 'TrybeTrip - Agência de Viagens';
 document.body.appendChild(elementH1);
 
@@ -43,4 +44,20 @@ elememtSectionLeft.appendChild(elementImg);
 
 // Exercício 8
 
-const elementList
+const elementUl = document.createElement('ul');
+elememtSectionRight.appendChild(elementUl);
+const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+  'Sete', 'Oito', 'Nove', 'Dez']
+for (let num in arrayNumbers) {
+  const elementLi = document.createElement('li');
+  elementLi.innerHTML = arrayNumbers[num];
+  elementUl.appendChild(elementLi);
+}
+
+// Exercício 9
+
+for (let index = 1; index <= 3; index += 1) {
+  const elementH3 = document.createElement('h3');
+  elementH3.innerHTML = `H3 ${index}`;
+  elementMain.appendChild(elementH3);
+}
